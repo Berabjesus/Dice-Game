@@ -19,5 +19,11 @@
   min-height: 90vh;
   box-shadow: 3px 3px 30px #000000;
   background-color: #1f0627;
-  border: ;
 }
+
+.active-player {
+  background-color: #2a1f2e;
+  border: 2px ;
+}
+
+
