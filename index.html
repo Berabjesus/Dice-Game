@@ -11,13 +11,35 @@
   </head>
 <body>
   <main class="wrapper">
-    <section class="board-container h-100 w-100 d-flex flex-wrap">
+    <section class="board-container h-100 w-100 d-flex flex-wrap text-white position-relative">
+      <div class="position-absolute d-flex flex-column justify-content-between h-100 button-container">
+        <a class="btn p-2 buttons" id="newGame">New Game</a>
+        <div class="d-flex flex-column justify-content-between h-25">
+          <a class="btn p-2 buttons">Roll Dice</a>
+          <a class="btn p-2 buttons">Hold</a>  
+        </div>
+      </div>
       <div class="row flex-column align-items-center justify-content-around col-md-6 col-12 active-player" id="playerOne">
-        <h1 class="player-name" id="playerOneName">Player One</h1>
-        <h2 class="player-score" id="playerScore-0">0</h2>
-        <div class="p-3 border">
+        <h1 class="player-name" id="name-0">Player One</h1>
+        <div class="p-3">
+          <h2>Total Count</h2>
+          <h2 class="total-count text-center" id="total-0">0</h2>
+        </div>
+        <div class="p-3 bg-dark rounded">
           <h2>Current Count</h2>
           <h2 class="current-count text-center" id="current-0">0</h2>
+        </div>
+      </div>
+
+      <div class="row flex-column align-items-center justify-content-around col-md-6 col-12" id="playerOne">
+        <h1 class="player-name" id="name-1">Player Two</h1>
+        <div class="p-3">
+          <h2>Total Count</h2>
+          <h2 class="total-count text-center" id="total-1">0</h2>
+        </div>
+        <div class="p-3 bg-dark rounded">
+          <h2>Current Count</h2>
+          <h2 class="current-count text-center" id="current-1">0</h2>
         </div>
       </div>
     </section>
