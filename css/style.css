@@ -1,0 +1,23 @@
+/* I. Defaults */
+.border-dash {
+  border: 4px dashed red;
+}
+
+/* 1.0 wrapper */
+.wrapper {
+  min-height: 100vh;
+  padding: 2vw 10vw;
+  width: 100%;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+}
+
+/* 2.0 board container */
+
+.board-container {
+  position: relative;
+  height: auto;
+  min-height: 90vh;
+  box-shadow: 3px 3px 30px #000000;
+  background-color: #1f0627;
+  border: ;
+}
