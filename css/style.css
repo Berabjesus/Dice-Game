@@ -39,6 +39,7 @@
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.753);
   box-shadow: 1px 5px 4px rgb(107, 95, 107);
+  font-size: 24px;
 }
 
 .buttons:active {
