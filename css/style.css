@@ -23,8 +23,9 @@
 
 .active-player {
   background-color: #2a1f2e;
-  border: 2px dashed rgb(248, 248, 207);
+  border: 4px solid rgb(248, 248, 207);
   box-shadow: 1px 0px 20px rgb(66, 65, 61);
+  transform: scale(1.07);
 }
 
 /* 3.0 button container */
