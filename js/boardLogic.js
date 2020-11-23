@@ -33,12 +33,13 @@ function updatePlayer(player, reset = false) {
   player.parentElement.parentElement.classList.remove('active-player')
   if (reset == false) {
     activePlayer === 0 ? activePlayer = 1 : activePlayer = 0
+  } else {
+    activePlayer = 0
   }
   document.querySelector('#current-' + activePlayer).parentElement.parentElement.classList.add('active-player')
 }
 
 function reset() {
-  activePlayer = 0
   let player = document.querySelector('#current-' + activePlayer)
   updatePlayer(player, true)
   let allTotalScores = document.getElementsByClassName('total-count')
