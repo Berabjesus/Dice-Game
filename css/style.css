@@ -33,7 +33,6 @@
   z-index: 99;
   width: 200px;
   padding: 6vh 0;
-  border: 3px dashed red;
 }
 
 .buttons {
@@ -51,7 +50,7 @@
 /* 4. 0 Dice */
 .dice {
   transform-style: preserve-3d;
-  transform: rotate3d(0, 1, 0, 270deg) ;
+  transform: rotate3d(1, 1, 0, 0deg) ;
 }
 
 .face {
