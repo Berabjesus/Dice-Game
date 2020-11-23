@@ -1,13 +1,17 @@
 window.onload = () => {
-  // let boardContainer = document.querySelector('.board-container')
+  let faceOne = document.querySelector('#faceOne')
+  let dot = document.createElement('div')
+  dot.classList.add('dot')
 
-  // let board = document.createElement('div')
-  // board.classList.add('col-6', 'd-flex', 'flex-column','align-items-center', 'py-4' , 'border-dash')
+  let diceDots = [
+    ['e'], ['c', 'g'],['c','e', 'g'],['a','c','g','i'],['a','c','e','g','i'],['a','c','d','f','g','i']
+  ]
 
-  // let playerName = document.createElement('h1')
-  // playerName.innerText = 'Player'
-  // board.appendChild(playerName)
-
-  // boardContainer.appendChild(board)
-  // boardContainer.appendChild(board.cloneNode())
+  diceDots.forEach(element => {
+    
+  });
+    dot.style.gridArea = 'e'
+    faceOne.appendChild(dot.cloneNode())  
+    dot.style.gridArea = 'a'
+    faceOne.appendChild(dot.cloneNode())  
 }
