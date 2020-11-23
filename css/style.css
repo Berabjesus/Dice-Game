@@ -28,11 +28,12 @@
 }
 
 /* 3.0 button container */
-.button-container {
+.dice-container {
   left: calc(100%/2 - 100px);
   z-index: 99;
   width: 200px;
   padding: 6vh 0;
+  border: 3px dashed red;
 }
 
 .buttons {
@@ -50,10 +51,7 @@
 /* 4. 0 Dice */
 .dice {
   transform-style: preserve-3d;
-  transform: rotate3d(1, 1, 0, 45deg);
-  /* transform: rotateX(0deg); */
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  animation: spin 4s  1 linear;
+  transform: rotate3d(0, 1, 0, 270deg) ;
 }
 
 .face {
@@ -103,16 +101,16 @@
   background-color: black;
 }
 
-/* @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } } */
-/* @keyframes spin { 10% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } */
+.roll {
+  animation: spin 0.7s  1 linear;
+}
 
 @keyframes spin {
   from {
-    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -webkit-transform: rotateX(0deg) rotateZ(45deg) translateZ(0px);
   }
   to {
-    -webkit-transform: rotateX(359deg) rotateY(3590deg) rotateZ(359deg);
+    -webkit-transform: rotateX(359deg) rotateZ(359deg);
   }
 }
 
