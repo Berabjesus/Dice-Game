@@ -105,6 +105,16 @@
   animation: spin 0.7s  1 linear;
 }
 
+/* 5.0 Winner alert */
+.alert-success {
+  position: fixed;
+  z-index: 999;
+  display: none;
+  width: 100%;
+  padding: 3vh 0;
+}
+
+/* 6.0 Animation */
 @keyframes spin {
   from {
     -webkit-transform: rotateX(0deg) rotateZ(45deg) translateZ(0px);
@@ -113,4 +123,6 @@
     -webkit-transform: rotateX(359deg) rotateZ(359deg);
   }
 }
+
+
 

@@ -10,6 +10,10 @@
     <title>Dice Game</title>
   </head>
 <body>
+  <div class="alert alert-success alert-dismissible fade show text-center h1" id="winnerBanner">
+    <h1 id="bannerMsg"></h1>
+    <button type="button" class="close" onclick="closeBanner()">&times;</button>
+  </div>
   <main class="wrapper">
     <section class="board-container h-100 w-100 d-flex flex-wrap text-white position-relative">
       <div class="position-absolute d-flex flex-column justify-content-between h-100 dice-container">

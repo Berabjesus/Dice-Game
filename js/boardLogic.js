@@ -1,3 +1,5 @@
+let winnerBanner = document.getElementById('winnerBanner')
+
 function updateCurrentScore(randomNumber) {
   let player = document.querySelector('#current-' + activePlayer)
   let currentScore = player.textContent
@@ -16,6 +18,13 @@ function updateTotalScore() {
   let totalScore = document.querySelector('#total-' + activePlayer)
 
   totalScore.textContent = parseInt(totalScore.textContent) + parseInt(currentScore)
+  if (parseInt(totalScore.textContent) >= 100) {  
+    winnerBanner.style.display = 'block'
+    let bannerMsg = document.getElementById('bannerMsg')
+    bannerMsg.innerText = "Player " + (parseInt(activePlayer) + 1) + ' Won the game'
+    reset()
+    return 0;
+  }
   updatePlayer(player)
 }
 
@@ -39,4 +48,9 @@ function reset() {
   }
 
   updateDice(document.getElementById('dice'), 1)
+}
+
+
+function closeBanner() {
+  winnerBanner.style.display = 'none'
 }
