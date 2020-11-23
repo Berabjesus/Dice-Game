@@ -4,9 +4,9 @@ function updateCurrentScore(randomNumber) {
 
   if (randomNumber === 1) {
     player.textContent = 0
-    player.parentElement.classList.remove('active-player')
+    player.parentElement.parentElement.classList.remove('active-player')
     activePlayer === 0 ? activePlayer = 1 : activePlayer = 0
-    document.querySelector('#current-' + activePlayer).parentElement.classList.add('active-player')
+    document.querySelector('#current-' + activePlayer).parentElement.parentElement.classList.add('active-player')
 
   } else {
     player.textContent = parseInt(currentScore) + parseInt (randomNumber)
