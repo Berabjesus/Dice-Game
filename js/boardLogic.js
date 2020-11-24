@@ -20,6 +20,7 @@ function updateTotalScore() {
   totalScore.textContent = parseInt(totalScore.textContent) + parseInt(currentScore)
   if (parseInt(totalScore.textContent) >= 100) {  
     winnerBanner.style.display = 'block'
+    document.getElementById('winnerAudio').play()
     let bannerMsg = document.getElementById('bannerMsg')
     bannerMsg.innerText = "Player " + (parseInt(activePlayer) + 1) + ' Won the game'
     reset()
