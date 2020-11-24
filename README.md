@@ -7,6 +7,7 @@
 # Made with
 - JavaScript
 - Bootstrap
+- HTML & CSS
 
 # Features
 - 3D dice 
