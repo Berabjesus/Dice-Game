@@ -3,6 +3,7 @@ activePlayer = 0
 function rollDice() {
   let dice = document.getElementById('dice')
   dice.classList.add('roll')
+  document.getElementById('diceRoll').play()
   randomNumber = getRandomNumber()
   updateDice(dice, randomNumber)
   setTimeout(function(){ 
