@@ -14,7 +14,7 @@ function rollDice() {
 }
 
 function getRandomNumber() {
-  rand = Math.floor(Math.random() * 6) + 1
+  const rand = Math.floor(Math.random() * 6) + 1
   return rand
 }
 

@@ -1,8 +1,8 @@
-let winnerBanner = document.getElementById('winnerBanner')
+const winnerBanner = document.getElementById('winnerBanner')
 
 function updateCurrentScore(randomNumber) {
-  let player = document.querySelector('#current-' + activePlayer)
-  let currentScore = player.textContent
+  const player = document.querySelector('#current-' + activePlayer)
+  const currentScore = player.textContent
 
   if (randomNumber === 1) {
     updatePlayer(player)
@@ -13,15 +13,15 @@ function updateCurrentScore(randomNumber) {
 
 
 function updateTotalScore() {
-  let player = document.querySelector('#current-' + activePlayer)
-  let currentScore = player.textContent
-  let totalScore = document.querySelector('#total-' + activePlayer)
+  const player = document.querySelector('#current-' + activePlayer)
+  const currentScore = player.textContent
+  const totalScore = document.querySelector('#total-' + activePlayer)
 
   totalScore.textContent = parseInt(totalScore.textContent) + parseInt(currentScore)
   if (parseInt(totalScore.textContent) >= 100) {  
     winnerBanner.style.display = 'block'
     document.getElementById('winnerAudio').play()
-    let bannerMsg = document.getElementById('bannerMsg')
+    const bannerMsg = document.getElementById('bannerMsg')
     bannerMsg.innerText = "Player " + (parseInt(activePlayer) + 1) + ' Won the game'
     reset()
     return 0;
@@ -41,9 +41,9 @@ function updatePlayer(player, reset = false) {
 }
 
 function reset() {
-  let player = document.querySelector('#current-' + activePlayer)
+  const player = document.querySelector('#current-' + activePlayer)
   updatePlayer(player, true)
-  let allTotalScores = document.getElementsByClassName('total-count')
+  const allTotalScores = document.getElementsByClassName('total-count')
 
   for (let i = 0; i < allTotalScores.length; i++) {
     allTotalScores[i].textContent = 0
