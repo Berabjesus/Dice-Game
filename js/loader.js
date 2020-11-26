@@ -1,9 +1,9 @@
 window.onload = () => {
-  let dot = document.createElement('div')
+  const dot = document.createElement('div')
   dot.classList.add('dot')
 
-  let sides = document.querySelectorAll('.face')
-  let diceDots = [
+  const sides = document.querySelectorAll('.face')
+  const diceDots = [
     ['e'], ['c', 'g'],['c','e', 'g'],['a','c','g','i'],['a','c','e','g','i'],['a','c','d','f','g','i']
   ]
 
