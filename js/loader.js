@@ -1,5 +1,4 @@
 window.onload = () => {
-  let faceOne = document.querySelector('#faceOne')
   let dot = document.createElement('div')
   dot.classList.add('dot')
 
