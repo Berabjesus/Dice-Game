@@ -47,9 +47,10 @@
 }
 
 .buttons {
+  border: 1px solid rgb(228, 203, 203);
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.753);
-  box-shadow: 1px 5px 4px rgb(107, 95, 107);
+  box-shadow: 1px 7px 4px rgb(163, 154, 163);
   font-size: 24px;
 }
 
