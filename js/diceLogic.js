@@ -1,7 +1,7 @@
 activePlayer = 0
 
 function rollDice() {
-  let dice = document.getElementById('dice')
+  const dice = document.getElementById('dice')
   dice.classList.add('roll')
   document.getElementById('diceRoll').play()
   randomNumber = getRandomNumber()
