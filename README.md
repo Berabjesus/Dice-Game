@@ -10,7 +10,7 @@
 - HTML & CSS
 
 # Features
-- 3D dice 
+- 3D dice with css
 - Simple player board
 
 # Rules
