@@ -1,5 +1,5 @@
 # JavaScript Dice game 
-> Simple javaScript dice game made to impelment DOM manipulations with JavaScript
+> Simple javaScript dice game made to impelment DOM manipulations and events with JavaScript
 
 # Live Demo
 - Live demo -> [Dice Game](https://raw.githack.com/Berabjesus/Dice-Game/main/index.html)
